@@ -4,4 +4,4 @@
 - 칼리 장바구니 페이지 전체 선택 체크박스 부분 구현
 - [피그마링크](https://www.figma.com/file/CDSQtjO7hygL08Le5heTYD/%EC%95%84%ED%86%A0%EB%AF%B9-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8?type=design&node-id=0%3A1&mode=dev)
 
-![피그마](./react/src/assets/Figma.png)
+![피그마](./src/assets/Figma.png)
