@@ -1,5 +1,5 @@
-import ButtonClick from './ButtonClick'
-import './ButtonClick.css'
+import ButtonClick from '@/Component/ButtonClick'
+import '@/Component/ButtonClick.css'
 
 function App() {
   return (
