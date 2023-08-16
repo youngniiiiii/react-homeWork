@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
 import { ButtonClick } from '@/Component/ButtonClick'
 import '@/Component/ButtonClick.css'
-import { Button, Checkbox, SubmitButton, CheckboxAll } from './Component/ButtonClick'
+import { Button, Checkbox, SubmitButton } from './Component/ButtonClick'
+import { useState } from 'react'
 
 function App() {
   //[상태,set상태]
@@ -28,8 +28,7 @@ function App() {
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       <h1>React 1주차 과제</h1>
       <div style={{ padding: '20px' }}>
-        <ButtonClick buttonClick="deSelect" />
-        <CheckboxAll buttonClick="Select" />
+        <ButtonClick isChecked={isChecked} onChange={handleCheckboxChange} /> {/* 버튼 컬리 */}
       </div>
       <Checkbox isChecked={isChecked} onChange={handleCheckboxChange} />
       <div style={{ padding: '20px' }}>

@@ -1,33 +1,13 @@
 import PropTypes from 'prop-types'
-import { useId } from 'react'
 
-export const CheckboxAll = (isChecked) => {
-  const checkboxId = useId()
+export function ButtonClick({ isChecked, onChange }) {
+  // console.log(isChecked)
   return (
     <>
-      <label htmlFor={checkboxId}>
-        <input type="checkbox" id={checkboxId} className={isChecked === 'deSelect' ? 'checked' : 'unChecked'} />
-        체크박스
-      </label>
+      <span>체크박스</span>
+      <button type="button" className={isChecked ? 'checked' : 'unChecked'} onClick={onChange}></button>
     </>
   )
-}
-
-CheckboxAll.propTypes = {
-  isChecked: PropTypes.bool,
-}
-
-export function ButtonClick({ isChecked }) {
-  console.log(isChecked)
-  return (
-    <>
-      <span>버튼</span>
-      <button type="button" className={isChecked === 'deSelect' ? 'checked' : 'unChecked'} />
-    </>
-  )
-}
-ButtonClick.propTypes = {
-  isChecked: PropTypes.string,
 }
 
 export function Button({ text, onClick }) {
