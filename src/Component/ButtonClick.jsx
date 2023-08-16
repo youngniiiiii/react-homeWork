@@ -1,10 +1,14 @@
 import PropTypes from 'prop-types'
+import { useId } from 'react'
 
 export const CheckboxAll = (isChecked) => {
+  const checkboxId = useId()
   return (
     <>
-      <span>체크박스</span>
-      <button type="button" className={isChecked === 'deSelect' ? 'checked' : 'unChecked'} />
+      <label htmlFor={checkboxId}>
+        <input type="checkbox" id={checkboxId} className={isChecked === 'deSelect' ? 'checked' : 'unChecked'} />
+        체크박스
+      </label>
     </>
   )
 }
